@@ -1,0 +1,6 @@
+{
+    "values": [
+        "lantern_impl:v1/forceload/utilities/initialize_overworld",
+        "lantern_impl:v1/forceload/utilities/initialize_generic"
+    ]
+}

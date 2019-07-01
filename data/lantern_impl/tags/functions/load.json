@@ -1,0 +1,6 @@
+{
+    "values": [
+        "#lantern_impl:load_api",
+        "#lantern_impl:load_main"
+    ]
+}

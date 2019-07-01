@@ -1,0 +1,7 @@
+{
+    "values": [
+        "#lantern_impl:resolve_lantern",
+        "#lantern_impl:resolve_api",
+        "#lantern_impl:resolve_main"
+    ]
+}
