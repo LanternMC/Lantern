@@ -12,5 +12,10 @@ scoreboard players reset * lantern.ignore
 scoreboard players enable @a lantern.ignore
 scoreboard players set @a lantern.ignore 0
 
+# Cancel execution of the dimension tags during load
+setblock -30000000 0 8883 minecraft:stone
+execute in minecraft:the_nether run setblock -30000000 0 8883 minecraft:stone
+execute in minecraft:the_end run setblock -30000000 0 8883 minecraft:stone
+
 # Schedule forceload check and loading
 function lantern_impl:v1/forceload/schedule
