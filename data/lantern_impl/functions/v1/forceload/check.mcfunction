@@ -4,7 +4,7 @@ scoreboard players enable @a[scores={lantern.ignore=0}] lantern.ignore
 
 # Increment scoreboard timer used for tellraw display interval
 scoreboard players add lantern.forceload_timer lantern.global 1
-execute if score lantern.forceload_timer lantern.global matches 50 run scoreboard players set lantern.forceload_timer lantern.global 0
+execute unless score lantern.forceload_timer lantern.global matches 0..49 run scoreboard players set lantern.forceload_timer lantern.global 0
 
 # Check Overworld forceload state
 execute store success score lantern.forceload lantern.global run forceload query -30000000 8880
