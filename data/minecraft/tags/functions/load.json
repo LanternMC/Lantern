@@ -2,7 +2,6 @@
     "values": [
         "#lantern_impl:prelude",
         "#lantern_impl:enumerate_versions",
-        "#lantern_impl:resolve_versions",
-        "#lantern_impl:post_resolve"
+        "#lantern_impl:resolve_versions"
     ]
 }
