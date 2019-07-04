@@ -2,16 +2,23 @@
 scoreboard objectives add lantern.global dummy
 scoreboard objectives add lantern.const dummy
 
-# Enable forceloading (embedders can delete the function to disable this)
-function lantern_impl:v1/enable_forceload
-
 # Enable dimension tags (embedders can delete the function to disable them)
-function lantern_impl:v1/enable_dimension_tags
+function lantern.1:options/enable_dimension_tags
 
-# Halt the execution of the dimension tick tags during load
-setblock -30000000 0 8883 minecraft:stone
-execute in minecraft:the_nether run setblock -30000000 0 8883 minecraft:stone
-execute in minecraft:the_end run setblock -30000000 0 8883 minecraft:stone
+# Unmark the chunks for forceloading to allow them to be marked once more
+forceload remove -30000000 8880
+execute in minecraft:the_nether run forceload remove -30000000 8880
+execute in minecraft:the_end run forceload remove -30000000 8880
 
-# Run the forceloading process
-execute if score lantern.forceload lantern.counts matches 1.. run function lantern_impl:v1/forceload/initialize
+# Mark the chunks for forceloading, which causes them to be synchronously loaded
+forceload add -30000000 8880
+execute in minecraft:the_nether run forceload add -30000000 8880
+execute in minecraft:the_end run forceload add -30000000 8880
+
+# Initialize forceloaded chunks
+function #lantern_impl:v1/initialize_overworld
+execute in minecraft:the_nether run function #lantern_impl:v1/initialize_the_nether
+execute in minecraft:the_end run function #lantern_impl:v1/initialize_the_end
+
+# Indicate that Lantern version 1 is loaded
+scoreboard players set lantern lantern.loaded 1

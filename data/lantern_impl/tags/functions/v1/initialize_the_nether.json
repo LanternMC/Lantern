@@ -1,6 +1,6 @@
 {
     "values": [
-        "lantern_impl:v1/forceload/utilities/initialize_the_nether",
-        "lantern_impl:v1/forceload/utilities/initialize_generic"
+        "lantern_impl:v1/utilities/initialize_the_nether",
+        "lantern_impl:v1/utilities/initialize_generic"
     ]
 }
