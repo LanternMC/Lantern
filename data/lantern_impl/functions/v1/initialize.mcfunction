@@ -3,7 +3,7 @@ scoreboard objectives add lantern.global dummy
 scoreboard objectives add lantern.const dummy
 
 # Enable dimension tags (embedders can delete the function to disable them)
-function lantern.1:options/enable_dimension_tags
+function lantern.1:flags/enable_dimension_tags
 
 # Unmark the chunks for forceloading to allow them to be marked once more
 forceload remove -30000000 8880
