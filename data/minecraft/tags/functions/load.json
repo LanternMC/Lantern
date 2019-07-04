@@ -1,7 +1,9 @@
 {
     "values": [
         "#lantern_impl:prelude",
-        "#lantern_impl:enumerate_versions",
-        "#lantern_impl:resolve_versions"
+        "#lantern_impl:enumerate_lantern",
+        "#lantern_impl:resolve_lantern",
+        "#lantern_impl:resolve",
+        "#lantern_impl:lantern_flags"
     ]
 }

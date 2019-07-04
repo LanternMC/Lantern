@@ -7,6 +7,9 @@ execute unless block -30000000 0 8881 minecraft:dark_oak_wall_sign[facing=south]
 # Place the shulker box if it is not already present
 execute unless block -30000000 0 8882 minecraft:yellow_shulker_box[facing=up] run setblock -30000000 0 8882 minecraft:yellow_shulker_box[facing=up]
 
+# Place a stone block where the command block so it can be refreshed if enabled
+setblock -30000000 0 8883 minecraft:stone
+
 # Fill the protective layer of bedrock
 fill -30000000 1 8880 -29999985 1 8895 minecraft:bedrock
 
