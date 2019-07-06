@@ -4,6 +4,7 @@
         "#lantern_impl:enumerate_lantern",
         "#lantern_impl:resolve_lantern",
         "#lantern_impl:resolve",
-        "#lantern_impl:lantern_flags"
+        "#lantern_impl:lantern_flags",
+        "#lantern_impl:post_resolve"
     ]
 }

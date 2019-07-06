@@ -25,7 +25,3 @@ teleport cb-0-0-0-1 -30000000 0 8880
 
 # Create utility entity if it does not already exist
 execute unless entity cb-0-0-0-1 run summon minecraft:armor_stand -30000000 0 8880 {UUIDLeast:1L,UUIDMost:871878361088L,NoGravity:1b,Invisible:1b,Invulnerable:1b}
-
-execute if blocks -30000000 0 8880 -30000000 0 8880 -30000000 0 8880 all run say overworld loaded
-execute in minecraft:the_nether if blocks -30000000 0 8880 -30000000 0 8880 -30000000 0 8880 all run say nether loaded
-execute in minecraft:the_end if blocks -30000000 0 8880 -30000000 0 8880 -30000000 0 8880 all run say end loaded
