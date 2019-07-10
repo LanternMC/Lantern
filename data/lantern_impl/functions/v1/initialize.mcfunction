@@ -2,6 +2,9 @@
 scoreboard objectives add lantern.global dummy
 scoreboard objectives add lantern.const dummy
 
+# Clear constant scoreboard, as constants are redefined every reload anyway
+scoreboard players reset * lantern.const
+
 # Enable dimension tags (embedders can delete the function to disable them)
 function lantern.1:flags/enable_dimension_tags
 
