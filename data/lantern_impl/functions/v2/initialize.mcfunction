@@ -19,9 +19,9 @@ execute in minecraft:the_nether run forceload add -30000000 8880
 execute in minecraft:the_end run forceload add -30000000 8880
 
 # Initialize forceloaded chunks
-function lantern_impl:v1/utilities/initialize_generic
-execute in minecraft:the_nether run function lantern_impl:v1/utilities/initialize_generic
-execute in minecraft:the_end run function lantern_impl:v1/utilities/initialize_generic
+function lantern_impl:v2/utilities/initialize_generic
+execute in minecraft:the_nether run function lantern_impl:v2/utilities/initialize_generic
+execute in minecraft:the_end run function lantern_impl:v2/utilities/initialize_generic
 
 # Teleport the utility entity to the proper location
 teleport cb-0-0-0-1 -30000000 0 8880
