@@ -13,9 +13,9 @@ Lantern offers the following features:
 
  - Load hooks that allow your data pack to verify the version of Lantern or other dependencies. 
  - Various scoreboard objectives used to hold global variables and data pack metadata.
- - A forceloaded chunk in each dimension, each containing a lectern, sign, and shulker box.
+ - A forceloaded chunk for each dimension, each containing several useful utility blocks.
  - A permanent armor stand entity useful for computational loot tables and other calculations.
- - (Disableable) Per-dimension tick hooks required for certain entity-related operations.
+ - Per-dimension tick hooks required for certain timing-sensitive operations.
 
 Additionally, Lantern is built such that multiple versions of the library may
 be loaded at once without causing runtime issues. This mean that it is
